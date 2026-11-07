@@ -1,0 +1,277 @@
+{
+  "meta": {
+    "system": "COLE — sistema de transporte urbano de Neuquén Capital",
+    "since": "1 de febrero de 2023",
+    "operators": [
+      "Ko-Ko S.R.L.",
+      "Expreso Tigre Iguazú S.A. (grupo Vía Bariloche)"
+    ],
+    "payment": "SUBE",
+    "hours": "aprox. 5:00–24:00; frecuencia central diurna hábil",
+    "source": "Wikipedia: Anexo:Transporte urbano de la ciudad de Neuquén (consulta 2026-11-06)",
+    "count": 30
+  },
+  "lines": [
+    {
+      "number": 1,
+      "terminals": "Gran Neuquén Norte ↔ Área Centro Sur",
+      "frequency_min": 17,
+      "notes": null,
+      "game_corridor": [
+        "Godoy",
+        "Av. Argentina",
+        "Sarmiento"
+      ]
+    },
+    {
+      "number": 2,
+      "terminals": "Sapere ↔ Área Centro Sur / C. Industrial J. Nevares",
+      "frequency_min": 33,
+      "notes": null,
+      "game_corridor": [
+        "RN 22",
+        "Av. Argentina",
+        "Sarmiento",
+        "Av. del Oeste"
+      ]
+    },
+    {
+      "number": 3,
+      "terminals": "Rincón de Emilio ↔ La Sirena / Río Grande",
+      "frequency_min": 55,
+      "notes": null,
+      "game_corridor": [
+        "Av. Argentina"
+      ]
+    },
+    {
+      "number": 4,
+      "terminals": "Villa Ceferino ↔ Área Centro Este / La Sirena",
+      "frequency_min": 26,
+      "notes": null,
+      "game_corridor": [
+        "Av. Argentina",
+        "Roca"
+      ]
+    },
+    {
+      "number": 5,
+      "terminals": "Gran Neuquén ↔ Confluencia (circular, horario)",
+      "frequency_min": 23,
+      "notes": "circular horario",
+      "game_corridor": [
+        "Av. Argentina",
+        "RN 22",
+        "Av. del Oeste",
+        "Bouquet Roldán"
+      ]
+    },
+    {
+      "number": 6,
+      "terminals": "Cuenca XV ↔ Área Centro Sur",
+      "frequency_min": 18,
+      "notes": "3 servicios de madrugada",
+      "game_corridor": [
+        "RN 22",
+        "Av. Argentina",
+        "Sarmiento"
+      ]
+    },
+    {
+      "number": 7,
+      "terminals": "Cuenca XV ↔ Área Centro Sur",
+      "frequency_min": 17,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 8,
+      "terminals": "Gran Neuquén Sur ↔ Área Centro Sur",
+      "frequency_min": 14,
+      "notes": "4 servicios de madrugada",
+      "game_corridor": [
+        "Av. Argentina",
+        "Sarmiento"
+      ]
+    },
+    {
+      "number": 9,
+      "terminals": "Cuenca XV ↔ Área Centro",
+      "frequency_min": 15,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 10,
+      "terminals": "Gran Neuquén Sur ↔ Área Centro Este",
+      "frequency_min": 43,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 11,
+      "terminals": "Gran Neuquén ↔ Área Centro Este",
+      "frequency_min": 30,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 12,
+      "terminals": "Valentina Norte Rural (Los Hornos) ↔ Mariano Moreno",
+      "frequency_min": 12,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 13,
+      "terminals": "Gran Neuquén Sur ↔ Santa Genoveva / Mariano Moreno",
+      "frequency_min": 25,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 14,
+      "terminals": "Valentina Norte Rural (Los Hornos) ↔ Río Grande",
+      "frequency_min": 45,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 15,
+      "terminals": "Confluencia Rural ↔ Terrazas del Neuquén",
+      "frequency_min": 38,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 16,
+      "terminals": "Esfuerzo (Cuenca XVI) ↔ Mariano Moreno",
+      "frequency_min": 40,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 17,
+      "terminals": "Sapere ↔ Área Centro Este / Altos del Limay",
+      "frequency_min": 19,
+      "notes": null,
+      "game_corridor": [
+        "Bouquet Roldán",
+        "Av. Argentina",
+        "Sarmiento",
+        "Salta"
+      ]
+    },
+    {
+      "number": 18,
+      "terminals": "Confluencia ↔ Área Centro Este",
+      "frequency_min": 27,
+      "notes": null,
+      "game_corridor": [
+        "Av. Argentina",
+        "Roca"
+      ]
+    },
+    {
+      "number": 19,
+      "terminals": "Gran Neuquén ↔ Terrazas del Neuquén / Área Centro Este",
+      "frequency_min": 43,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 20,
+      "terminals": "Confluencia Rural ↔ Área Centro Este",
+      "frequency_min": 40,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 21,
+      "terminals": "Valentina Sur Urbana ↔ Área Centro Este",
+      "frequency_min": 28,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 22,
+      "terminals": "Las Perlas ↔ Área Centro Este",
+      "frequency_min": 36,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 23,
+      "terminals": "C. Industrial J. Nevares ↔ Área Centro Sur",
+      "frequency_min": 25,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 24,
+      "terminals": "Colonia Nueva Esperanza ↔ C. Industrial J. Nevares",
+      "frequency_min": 70,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 25,
+      "terminals": "Cuenca XV ↔ Confluencia Rural (circular, antihorario)",
+      "frequency_min": 24,
+      "notes": "circular antihorario",
+      "game_corridor": null
+    },
+    {
+      "number": 26,
+      "terminals": "Colonia Nueva Esperanza ↔ Canal V",
+      "frequency_min": 50,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 27,
+      "terminals": "Toma Norte 2 ↔ Área Centro Sur",
+      "frequency_min": 43,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 28,
+      "terminals": "Valentina Norte Urbana ↔ Sapere",
+      "frequency_min": 60,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 29,
+      "terminals": "Valentina Norte Rural ↔ Área Centro Sur",
+      "frequency_min": 73,
+      "notes": null,
+      "game_corridor": null
+    },
+    {
+      "number": 30,
+      "terminals": "14 de Octubre ↔ Confluencia Urbana",
+      "frequency_min": 25,
+      "notes": null,
+      "game_corridor": null
+    }
+  ],
+  "interurban": [
+    {
+      "line": "50A / 50B",
+      "operator": "Autobuses Neuquén",
+      "route": "Neuquén ↔ Plottier"
+    },
+    {
+      "line": "20",
+      "operator": "Expreso Colonia",
+      "route": "Neuquén ↔ Centenario"
+    },
+    {
+      "line": "914 A",
+      "operator": "Expreso Tigre Iguazú",
+      "route": "Neuquén ↔ Cipolletti / General Roca"
+    }
+  ]
+}

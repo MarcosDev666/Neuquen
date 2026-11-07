@@ -1,0 +1,8 @@
+# Neuquén Capital — build 3D
+
+- vértices: 15412
+- caras: 24242
+- archivo OBJ: 0.87 MB
+- edificios: 144 + landmarks
+- materiales: ver 3d/NeuquenCapital.mtl
+- se genera con: python3 tools/build_3d.py

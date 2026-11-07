@@ -1,0 +1,409 @@
+{
+  "meta": {
+    "count": 50,
+    "source": "Anexo:Barrios de la ciudad de Neuquén (Wikipedia / SITUN — Municipalidad de Neuquén)",
+    "note": "Centroides aproximados para etiquetar el mapa. No son límites oficiales."
+  },
+  "neighborhoods": [
+    {
+      "name": "Colonia Nueva Esperanza",
+      "lon": -68.198,
+      "lat": -38.928,
+      "x": -12024.7,
+      "y": 2609.5,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Ciudad Industrial Jaime de Nevares",
+      "lon": -68.186,
+      "lat": -38.9055,
+      "x": -10985.9,
+      "y": 5097.5,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Valentina Norte Rural",
+      "lon": -68.138,
+      "lat": -38.8995,
+      "x": -6830.5,
+      "y": 5760.9,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Valentina Norte Urbana",
+      "lon": -68.1265,
+      "lat": -38.909,
+      "x": -5834.9,
+      "y": 4710.5,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Esfuerzo",
+      "lon": -68.17,
+      "lat": -38.8875,
+      "x": -9600.7,
+      "y": 7087.8,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Hi.Be.Pa",
+      "lon": -68.0925,
+      "lat": -38.9005,
+      "x": -2891.5,
+      "y": 5650.3,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Cuenca XV",
+      "lon": -68.1665,
+      "lat": -38.913,
+      "x": -9297.7,
+      "y": 4268.2,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Gran Neuquén Norte",
+      "lon": -68.145,
+      "lat": -38.916,
+      "x": -7436.5,
+      "y": 3936.4,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Gran Neuquén Sur",
+      "lon": -68.1515,
+      "lat": -38.934,
+      "x": -7999.2,
+      "y": 1946.1,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "San Lorenzo Norte",
+      "lon": -68.0555,
+      "lat": -38.906,
+      "x": 311.7,
+      "y": 5042.2,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "San Lorenzo Sur",
+      "lon": -68.0545,
+      "lat": -38.916,
+      "x": 398.2,
+      "y": 3936.4,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Canal V",
+      "lon": -68.1065,
+      "lat": -38.9055,
+      "x": -4103.5,
+      "y": 5097.5,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Melipal",
+      "lon": -68.095,
+      "lat": -38.915,
+      "x": -3107.9,
+      "y": 4047.0,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Unión de Mayo",
+      "lon": -68.095,
+      "lat": -38.9315,
+      "x": -3107.9,
+      "y": 2222.5,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Huiliches",
+      "lon": -68.0505,
+      "lat": -38.913,
+      "x": 744.5,
+      "y": 4268.2,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Gregorio Álvarez",
+      "lon": -68.0465,
+      "lat": -38.9125,
+      "x": 1090.8,
+      "y": 4323.4,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "El Progreso",
+      "lon": -68.136,
+      "lat": -38.952,
+      "x": -6657.3,
+      "y": -44.2,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Villa Ceferino",
+      "lon": -68.045,
+      "lat": -38.923,
+      "x": 1220.7,
+      "y": 3162.4,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Bardas Soleadas",
+      "lon": -68.076,
+      "lat": -38.8995,
+      "x": -1463.1,
+      "y": 5760.9,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Islas Malvinas",
+      "lon": -68.0815,
+      "lat": -38.941,
+      "x": -1939.2,
+      "y": 1172.1,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Cumelén",
+      "lon": -68.0565,
+      "lat": -38.899,
+      "x": 225.1,
+      "y": 5816.2,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Bouquet Roldán",
+      "lon": -68.128,
+      "lat": -38.942,
+      "x": -5964.7,
+      "y": 1061.5,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Terrazas del Neuquén",
+      "lon": -68.095,
+      "lat": -38.899,
+      "x": -3107.9,
+      "y": 5816.2,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Alta Barda",
+      "lon": -68.0565,
+      "lat": -38.8945,
+      "x": 225.1,
+      "y": 6313.8,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Área Centro Oeste",
+      "lon": -68.0665,
+      "lat": -38.9465,
+      "x": -640.6,
+      "y": 563.9,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Área Centro Sur",
+      "lon": -68.0595,
+      "lat": -38.9615,
+      "x": -34.6,
+      "y": -1094.7,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "14 de Octubre",
+      "lon": -68.072,
+      "lat": -38.9335,
+      "x": -1116.8,
+      "y": 2001.4,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Área Centro Este",
+      "lon": -68.0515,
+      "lat": -38.9485,
+      "x": 657.9,
+      "y": 342.8,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Rincón de Emilio",
+      "lon": -68.0745,
+      "lat": -38.887,
+      "x": -1333.2,
+      "y": 7143.1,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Santa Genoveva",
+      "lon": -68.112,
+      "lat": -38.943,
+      "x": -4579.6,
+      "y": 950.9,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Villa Farrell",
+      "lon": -68.041,
+      "lat": -38.9395,
+      "x": 1566.9,
+      "y": 1337.9,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Mariano Moreno",
+      "lon": -68.0455,
+      "lat": -38.933,
+      "x": 1177.4,
+      "y": 2056.7,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Provincias Unidas",
+      "lon": -68.075,
+      "lat": -38.9155,
+      "x": -1376.5,
+      "y": 3991.7,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Sapere (Aníbal Sapere)",
+      "lon": -68.1245,
+      "lat": -38.9575,
+      "x": -5661.7,
+      "y": -652.4,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Valentina Sur Rural",
+      "lon": -68.17,
+      "lat": -38.955,
+      "x": -9600.7,
+      "y": -376.0,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Valentina Sur Urbana",
+      "lon": -68.158,
+      "lat": -38.945,
+      "x": -8561.9,
+      "y": 729.8,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Militar",
+      "lon": -68.1065,
+      "lat": -38.951,
+      "x": -4103.5,
+      "y": 66.3,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "La Sirena",
+      "lon": -68.1255,
+      "lat": -38.963,
+      "x": -5748.3,
+      "y": -1260.5,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Altos del Limay",
+      "lon": -68.078,
+      "lat": -38.9845,
+      "x": -1636.2,
+      "y": -3637.9,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Villa Florencia",
+      "lon": -68.0695,
+      "lat": -38.9255,
+      "x": -900.3,
+      "y": 2886.0,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Don Bosco III",
+      "lon": -68.128,
+      "lat": -38.9835,
+      "x": -5964.7,
+      "y": -3527.3,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Don Bosco II",
+      "lon": -68.1155,
+      "lat": -38.9815,
+      "x": -4882.6,
+      "y": -3306.2,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Limay",
+      "lon": -68.0555,
+      "lat": -38.9765,
+      "x": 311.7,
+      "y": -2753.3,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Barrio Nuevo",
+      "lon": -68.085,
+      "lat": -38.9525,
+      "x": -2242.2,
+      "y": -99.5,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Villa María",
+      "lon": -68.0945,
+      "lat": -38.9625,
+      "x": -3064.6,
+      "y": -1205.3,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Río Grande",
+      "lon": -68.111,
+      "lat": -38.96,
+      "x": -4493.0,
+      "y": -928.8,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Manuel Belgrano",
+      "lon": -68.1185,
+      "lat": -38.97,
+      "x": -5142.3,
+      "y": -2034.6,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Confluencia Urbana",
+      "lon": -68.0415,
+      "lat": -38.963,
+      "x": 1523.7,
+      "y": -1260.5,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Confluencia Rural",
+      "lon": -68.0415,
+      "lat": -38.975,
+      "x": 1523.7,
+      "y": -2587.4,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    },
+    {
+      "name": "Balcón de la Ciudad",
+      "lon": -68.0715,
+      "lat": -38.9065,
+      "x": -1073.5,
+      "y": 4986.9,
+      "accuracy": "centroide aproximado (±300-800 m)"
+    }
+  ]
+}
