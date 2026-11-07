@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "Registro de fuentes — Neuquén Capital PBSU",
+    "accessed": "2026-11-06",
+    "note": "Registro legible por máquinas de las fuentes usadas por capa de dato. Ver NOTICE.md y docs/05-DESARROLLO.md."
+  },
+  "sources": [
+    {
+      "id": "osm-spocwiki",
+      "what": "Geometría de ríos Limay, Neuquén y Negro; límite del departamento Confluencia; contorno de la provincia",
+      "files": ["data/geo/rio_limay_*.geojson", "data/geo/rio_neuquen_*.geojson", "data/geo/rio_negro_1.geojson", "data/geo/confluencia_departamento.geojson", "data/geo/neuquen_provincia.geojson"],
+      "origin": "OpenStreetMap (contribuidores), vía SpocWiki/America-Argentina (GitHub)",
+      "license": "CC BY-SA 3.0 (SpocWiki) · OSM: ODbL 1.0 con atribución \"© OpenStreetMap contributors\"",
+      "accuracy": "alta (geometría real); nivel de detalle moderado en la zona rural"
+    },
+    {
+      "id": "neuquen-municipalidad",
+      "what": "Puente Carretero (localización Ruta 22, 1937, 464 m, 9 arcos); SITUN/mapa oficial de barrios",
+      "origin": "neuquencapital.gov.ar (cultura/puente-carretero); Wikipedia: Anexo:Barrios de la ciudad de Neuquén",
+      "license": "información pública; uso con atribución; geometría de barrios NO importada (solo nombres)",
+      "accuracy": "alta para hechos; centroides de barrios aproximados (±300–800 m)"
+    },
+    {
+      "id": "wikipedia",
+      "what": "COLE (30 líneas, frecuencias, empresas y renombre 2023); RN 22; Transporte urbano; Aeropuerto Presidente Perón",
+      "origin": "Wikipedia: Anexo:Transporte urbano de la ciudad de Neuquén; Ruta_Nacional_22_(Argentina); Aeropuerto_Internacional_Presidente_Perón",
+      "license": "CC BY-SA 4.0",
+      "accuracy": "alta (contenido estable); verificar horarios/frecuencias contra la app COLE antes de reproducir"
+    },
+    {
+      "id": "periodismo",
+      "what": "Identidad del eje Av. Argentina/Olascoaga; Terminal de Ómnibus (Planas y Solalique); transporte interurbano; Isla Jordán",
+      "origin": "neuquennews.com.ar; neuquenalinstante.com.ar; omnilineas.com.ar; terminaldeomnibus-neuquen.com; rionegro.com.ar; masneuquen.com",
+      "license": "hechos y datos (no protegibles); redacción propia",
+      "accuracy": "alta para ubicación de hechos; coordenadas de POIs ±50–300 m salvo aeropuerto (fuente SkyVector/Wikipedia, alta)"
+    },
+    {
+      "id": "aeropuerto",
+      "what": "Coordenadas NQN/SAZN y pista 09/27 (2570 m)",
+      "origin": "SkyVector (SAZN); Wikipedia ES/EN",
+      "license": "información aeronáutica pública (AIP)",
+      "accuracy": "alta (-38.9514, -68.1406)"
+    },
+    {
+      "id": "relevamiento-propio",
+      "what": "Red vial esquemática (vías, calles del centro, vías FCG Roca), POIs aproximados, corredores COLE sugeridos, alturas de terreno, manzanas LOD1",
+      "origin": "elaboración propia a partir de las fuentes anteriores + conocimiento cartográfico general de la ciudad",
+      "license": "CC BY-SA 3.0 (con los avisos de este archivo y NOTICE.md)",
+      "accuracy": "ESQUEMÁTICA: ±100–300 m en posición; la red reproduce la topología, no el trazado exacto"
+    },
+    {
+      "id": "puerto",
+      "what": "Carátula del mod",
+      "origin": "generada con IA (no representa fotografía real)",
+      "license": "CC BY-SA 3.0",
+      "accuracy": "N/A (obra ilustrativa)"
+    }
+  ]
+}

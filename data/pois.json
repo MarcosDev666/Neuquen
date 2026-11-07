@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "count": 13,
+    "note": "Puntos de interés para el mapa y para colocar assets del mod. 'approx'=posición aproximada a verificar/refinar."
+  },
+  "pois": [
+    {
+      "id": "monumento",
+      "name": "Monumento a San Martín",
+      "lon": -68.0591,
+      "lat": -38.9516,
+      "x": 0.0,
+      "y": 0.0,
+      "desc": "Av. Argentina y Roca. Centro cívico y corazón comercial de la ciudad.",
+      "source": "kupi.com",
+      "approx": false
+    },
+    {
+      "id": "terminal",
+      "name": "Terminal de Ómnibus de Neuquén",
+      "lon": -68.0665,
+      "lat": -38.9562,
+      "x": -640.6,
+      "y": -508.6,
+      "desc": "Planas (ex-Ruta 22) y Solalique. 24 h. Patio de colectivos de larga y media distancia.",
+      "source": "omnilineas.com.ar; terminaldeomnibus-neuquen.com",
+      "approx": false
+    },
+    {
+      "id": "estacion",
+      "name": "Estación Terminal Neuquén (FCG Roca)",
+      "lon": -68.0591,
+      "lat": -38.9568,
+      "x": 0.0,
+      "y": -575.0,
+      "desc": "Estación ferroviaria; las vías dividen Av. Argentina (N) de Av. Olascoaga (S).",
+      "source": "masneuquen.com; neuquenalinstante.com.ar",
+      "approx": false
+    },
+    {
+      "id": "puente",
+      "name": "Puente Carretero (1937) + puente nuevo (1997)",
+      "lon": -68.0365,
+      "lat": -38.9515,
+      "x": 1956.5,
+      "y": 11.1,
+      "desc": "Cruce del Río Neuquén (464 m, 9 tramos de arcos). Une Neuquén con Cipolletti (RN 22). Próximo: controles; Isla Jordán.",
+      "source": "neuquencapital.gov.ar; Wikipedia RN 22",
+      "approx": false
+    },
+    {
+      "id": "aeropuerto",
+      "name": "Aeropuerto Int. Presidente Perón (NQN)",
+      "lon": -68.1406,
+      "lat": -38.9514,
+      "x": -7055.5,
+      "y": 22.1,
+      "desc": "7 km al oeste del centro (zona Valentina). Pista 09/27, 2570 m.",
+      "source": "Wikipedia; skyvector",
+      "approx": false
+    },
+    {
+      "id": "municipalidad",
+      "name": "Municipalidad / Centro Cívico",
+      "lon": -68.0598,
+      "lat": -38.9472,
+      "x": -60.6,
+      "y": 486.5,
+      "desc": "Centro administrativo de la ciudad sobre el eje monumental.",
+      "source": "relevamiento",
+      "approx": true
+    },
+    {
+      "id": "hospital",
+      "name": "Hospital Provincial Castro Rendón",
+      "lon": -68.0522,
+      "lat": -38.9395,
+      "x": 597.3,
+      "y": 1337.9,
+      "desc": "Principal hospital público de la ciudad.",
+      "source": "relevamiento",
+      "approx": true
+    },
+    {
+      "id": "parque",
+      "name": "Parque Central (ex-aeródromo)",
+      "lon": -68.0735,
+      "lat": -38.965,
+      "x": -1246.6,
+      "y": -1481.7,
+      "desc": "Gran pulmón verde junto al centro, sobre el antiguo aeródromo.",
+      "source": "relevamiento",
+      "approx": true
+    },
+    {
+      "id": "isla132",
+      "name": "Balneario / Isla 132 (sobre el Limay)",
+      "lon": -68.1005,
+      "lat": -38.991,
+      "x": -3584.0,
+      "y": -4356.6,
+      "desc": "Principal balneario ribereño de la ciudad sobre el río Limay.",
+      "source": "relevamiento",
+      "approx": true
+    },
+    {
+      "id": "islajordan",
+      "name": "Isla Jordán (Río Neuquén)",
+      "lon": -68.028,
+      "lat": -38.957,
+      "x": 2692.4,
+      "y": -597.1,
+      "desc": "Isla en el cauce del río, junto al acceso al puente carretero.",
+      "source": "rionegro.com.ar",
+      "approx": true
+    },
+    {
+      "id": "unco",
+      "name": "UNCo — Centro Regional Comahue",
+      "lon": -68.0655,
+      "lat": -38.933,
+      "x": -554.1,
+      "y": 2056.7,
+      "desc": "Universidad Nacional del Comahue; campus y facultades en la ciudad.",
+      "source": "relevamiento",
+      "approx": true
+    },
+    {
+      "id": "ciudaddeportiva",
+      "name": "Ciudad Deportiva",
+      "lon": -68.0385,
+      "lat": -38.947,
+      "x": 1783.4,
+      "y": 508.6,
+      "desc": "Complejo deportivo en el este, junto al río.",
+      "source": "rionegro.com.ar (COLE L4); relevamiento",
+      "approx": true
+    },
+    {
+      "id": "ministerio",
+      "name": "Ciudad Judicial / Palacio de Tribunales",
+      "lon": -68.062,
+      "lat": -38.9435,
+      "x": -251.1,
+      "y": 895.6,
+      "desc": "Sede judicial provincial sobre el eje.",
+      "source": "relevamiento",
+      "approx": true
+    }
+  ]
+}
