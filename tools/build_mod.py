@@ -60,6 +60,7 @@ def gather():
             add(f"docs/{f}")
     add("README.md")
     add("NOTICE.md")
+    add("LICENSE")
     if os.path.exists(os.path.join(ROOT, "assets/portada.png")):
         add("assets/portada.png")
     return [(s, PREFIX + d) for s, d in plan]

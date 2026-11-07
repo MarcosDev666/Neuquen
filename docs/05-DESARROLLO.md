@@ -6,7 +6,7 @@
 Neuquen/
 ├── README.md                  presentación del proyecto
 ├── NOTICE.md                  atribuciones y licencias
-├── LICENSE?                   CC BY-SA 3.0 (aviso en NOTICE.md; link oficial)
+├── LICENSE                    CC BY-SA 3.0 — resumen + link al legalcode oficial
 ├── data/
 │   ├── roads.json             red vial clasificada (31 vías, ejes en coords metros)
 │   ├── neighborhoods.json     50 barrios con centroide y zona
@@ -29,8 +29,7 @@ Neuquen/
 │   ├── build_3d.py            construye el OBJ/MTL + BUILD-INFO.txt
 │   ├── build_mod.py           empaqueta dist/*.zip + MANIFIESTO.json
 │   └── validate.py            verificación integral (CI-friendly)
-├── dist/                      paquete zip final + checksums
-└── .github/workflows/validate.yml   CI: corre validate.py en cada push/PR
+└── dist/                      paquete zip final + checksums
 ```
 
 ## 2 · Requisitos y regeneración

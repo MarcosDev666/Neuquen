@@ -44,6 +44,36 @@ class OBJ:
         self._cur_group = name
     def use(self, mat):
         self._cur_mat = mat
+    # ---- autorientación
+    def mark(self):
+        return len(self.verts), len(self.faces)
+    @staticmethod
+    def _normal(verts, idxs):
+        p0, p1, p2 = (verts[idxs[0] - 1], verts[idxs[1] - 1], verts[idxs[2] - 1])
+        ux, uy, uz = (p1[0] - p0[0], p1[1] - p0[1], p1[2] - p0[2])
+        vx, vy, vz = (p2[0] - p0[0], p2[1] - p0[1], p2[2] - p0[2])
+        return (uy * vz - uz * vy, uz * vx - ux * vz, ux * vy - uy * vx)
+    def fix_outward(self, m):
+        """Para sólidos convexos: voltea caras cuya normal apunta al interior."""
+        v0, f0 = m
+        pts = self.verts[v0:]
+        cx = sum(p[0] for p in pts) / len(pts)
+        cy = sum(p[1] for p in pts) / len(pts)
+        cz = sum(p[2] for p in pts) / len(pts)
+        for fi in range(f0, len(self.faces)):
+            mat, idxs = self.faces[fi]
+            nx, ny, nz = self._normal(self.verts, idxs)
+            fc = [sum(self.verts[i - 1][k] for i in idxs) / len(idxs) for k in range(3)]
+            dot = nx * (fc[0] - cx) + ny * (fc[1] - cy) + nz * (fc[2] - cz)
+            if dot < 0:
+                self.faces[fi] = (mat, list(reversed(idxs)))
+    def fix_up(self, m):
+        """Para superficies abiertas casi horizontales: voltea caras que miran hacia abajo."""
+        v0, f0 = m
+        for fi in range(f0, len(self.faces)):
+            mat, idxs = self.faces[fi]
+            if self._normal(self.verts, idxs)[1] < 0:
+                self.faces[fi] = (mat, list(reversed(idxs)))
     def save(self, obj_path, mtl_name):
         mat_faces = {}
         for mat, idxs in self.faces:
@@ -138,10 +168,12 @@ def add_terrain(o: OBJ, x0, z0, x1, z1, step=170):
         for i in range(nx):
             x, z = x0 + i * step, z0 + j * step
             idx[(i, j)] = o.v(x, terrain_h(x, z), z)
+    m = o.mark()
     for j in range(nz - 1):
         for i in range(nx - 1):
             a, b, c, d = idx[(i, j)], idx[(i, j + 1)], idx[(i + 1, j + 1)], idx[(i + 1, j)]
             o.tri(a, b, c, "Terrain"); o.tri(a, c, d, "Terrain")
+    o.fix_up(m)
 
 def add_ribbon(o: OBJ, pts_xz, width, mat, y=None, follow_terrain=True, lift=0.22, closed=False):
     """Cinta horizontal (ruta, río, pista). Si follow_terrain, sigue el terreno."""
@@ -165,11 +197,14 @@ def add_ribbon(o: OBJ, pts_xz, width, mat, y=None, follow_terrain=True, lift=0.2
             x, z = arr[i]
             h = (y if y is not None else terrain_h(x, z) + lift)
             acc.append(o.v(x, h, z))
+    m = o.mark()
     for i in range(n - 1):
         a, b, c, d = li[i], ri[i], ri[i + 1], li[i + 1]
         o.tri(a, b, c, mat); o.tri(a, c, d, mat)
+    o.fix_up(m)
 
 def add_box(o: OBJ, cx, base_y, cz, sx, sy, sz, mat, ry=0.0):
+    m = o.mark()
     hx, hz = sx / 2.0, sz / 2.0
     cs, sn = math.cos(ry), math.sin(ry)
     base = []
@@ -179,15 +214,15 @@ def add_box(o: OBJ, cx, base_y, cz, sx, sy, sz, mat, ry=0.0):
         base.append((x, z))
     top = [o.v(x, base_y + sy, z) for (x, z) in base]
     bot = [o.v(x, base_y, z) for (x, z) in base]
-    # tapas
-    o.quad(bot[0], bot[3], bot[2], bot[1], mat)      # inferior (hacia abajo)
+    o.quad(bot[0], bot[3], bot[2], bot[1], mat)      # inferior
     o.quad(top[0], top[1], top[2], top[3], mat)      # superior
-    # laterales (CCW hacia afuera)
     for i in range(4):
         j = (i + 1) % 4
         o.quad(bot[i], bot[j], top[j], top[i], mat)
+    o.fix_outward(m)
 
 def add_cyl(o: OBJ, cx, base_y, cz, r, h, mat, seg=14, taper=1.0, cap_top=True, cap_bot=False):
+    m = o.mark()
     ring_b, ring_t = [], []
     for i in range(seg):
         a = 2 * math.pi * i / seg
@@ -209,10 +244,12 @@ def add_cyl(o: OBJ, cx, base_y, cz, r, h, mat, seg=14, taper=1.0, cap_top=True, 
         for i in range(seg):
             j = (i + 1) % seg
             o.tri(c, ring_b[i], ring_b[j], mat)
+    o.fix_outward(m)
 
 def add_gable(o: OBJ, cx, base_y, cz, length, width, wall_h, roof_h, mat_wall, mat_roof, axis="x"):
     hx, hz = (length / 2, width / 2) if axis == "x" else (width / 2, length / 2)
     y0, y1, y2 = base_y, base_y + wall_h, base_y + wall_h + roof_h
+    m = o.mark()
     a = o.v(cx - hx, y0, cz - hz); b = o.v(cx + hx, y0, cz - hz)
     c = o.v(cx + hx, y0, cz + hz); d = o.v(cx - hx, y0, cz + hz)
     a1 = o.v(cx - hx, y1, cz - hz); b1 = o.v(cx + hx, y1, cz - hz)
@@ -222,9 +259,11 @@ def add_gable(o: OBJ, cx, base_y, cz, length, width, wall_h, roof_h, mat_wall, m
     o.quad(c, d, d1, c1, mat_wall); o.quad(d, a, a1, d1, mat_wall)
     o.quad(a1, b1, r2, r1, mat_roof); o.quad(d1, r1, r2, c1, mat_roof)
     o.tri(a1, r1, d1, mat_wall); o.tri(b1, c1, r2, mat_wall)
+    o.fix_outward(m)
 
 def loft_hemi(o: OBJ, cx, base_y, cz, radius, length, seg=12, mat="Bridge"):
     """Medio cilindro hueco (techo de arco) con eje a lo largo de X."""
+    m = o.mark()
     xr, xl = cx - length / 2, cx + length / 2
     prev_low, prev_up = None, None
     rings = []
@@ -248,6 +287,7 @@ def loft_hemi(o: OBJ, cx, base_y, cz, radius, length, seg=12, mat="Bridge"):
                 o.tri(c, ids[i], ids[i + 1], mat)
             else:
                 o.tri(c, ids[i + 1], ids[i], mat)
+    o.fix_outward(m)
 
 # ================================================================ ESCENA
 def main():
@@ -369,7 +409,6 @@ def main():
     for (lat, lon_off, hh, mat) in [(-38.9442, 4.0, 46.0, "DarkGlass"),
                                      (-38.9516, -4.5, 38.0, "Glass"),
                                      (-38.9600, 4.0, 42.0, "DarkGlass")]:
-        tx = axis_x + lon_off * 86493.0 / 1000.0 * 0 + lon_off * 1000.0 * 0.086493 * 10  # ~ grados→aprox no: usar lon/lat directo
         txx = project(-68.0591, lat)[0] + lon_off * 11.0
         ty = terrain_h(txx, project(-68.0591, lat)[1])
         zc = project(-68.0591, lat)[1]
@@ -475,6 +514,10 @@ def main():
         f"- edificios: {buildings} + landmarks\n"
         "- materiales: ver 3d/NeuquenCapital.mtl\n"
         "- se genera con: python3 tools/build_3d.py\n"
+        "- nota: el OBJ no trae normales de vértice; los windings SÍ son consistentes\n"
+        "  (sólidos hacia afuera; terreno/agua/rutas mirando hacia arriba).\n"
+        "  En Blender: Importar OBJ, seleccionar todo y Shift+N (Recalcular normales).\n"
+        "- ribbons (rutas/ríos) siguen el terreno; para el juego final, splines propias (docs/04).\n"
     )
     with open(f"{ROOT}/3d/BUILD-INFO.txt", "w") as f:
         f.write(info)

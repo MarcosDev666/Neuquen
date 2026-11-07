@@ -6,3 +6,7 @@
 - edificios: 144 + landmarks
 - materiales: ver 3d/NeuquenCapital.mtl
 - se genera con: python3 tools/build_3d.py
+- nota: el OBJ no trae normales de vértice; los windings SÍ son consistentes
+  (sólidos hacia afuera; terreno/agua/rutas mirando hacia arriba).
+  En Blender: Importar OBJ, seleccionar todo y Shift+N (Recalcular normales).
+- ribbons (rutas/ríos) siguen el terreno; para el juego final, splines propias (docs/04).
